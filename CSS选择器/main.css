@@ -1,0 +1,74 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  --color1: rgb(28, 250, 232);
+}
+
+
+.form-block {
+  height: 50px ;
+  width: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.label span {
+  width: 80px;
+}
+
+.txt {
+  height: 30px ;
+  width: 100%;
+  border-radius: 5px;
+  padding-left: 5px;
+  caret-color: rgb(0, 145, 130);   /* 光标颜色 */
+}
+
+.txt:focus {
+  background-color: var(--color1);
+}
+
+/* 聚焦改变背, 子元素背聚焦也会触发 */
+.form-block:focus-within {
+  background-color: var(--color1);
+}
+
+/* 利用属性去增加* */
+.label span:has(+input[required])::after {
+  content: '*';
+  color: rgb(240, 41, 41);
+}
+
+
+/* 分割线 */
+.content{
+  margin-top: 100px;
+  width: 500px;
+}
+
+/* 首字母大写 */
+.content p::first-letter  {
+  font-weight: bold;
+  font-size: 4em;
+  text-transform: uppercase;
+  float: left;
+  line-height: 1;
+  margin-right: 10px;
+}
+
+/* 改变选中的样式 */
+.content p::selection {
+  text-decoration: underline;
+  background: #8e8e8e;
+  color: #fff;
+}

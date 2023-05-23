@@ -1,0 +1,46 @@
+body {
+  --color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color);
+}
+
+.input-box {
+  position: relative;
+  width: 300px;
+  height: 40px;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  font-size: 1em;
+  padding: 0 10px;
+  border-radius: 5px;
+  background: var(--color);
+}
+
+/* input输入框有required属性, valid才会起作用，如果没有设置required，valid会一直触发 */
+.input-box input:valid,
+.input-box input:focus ~ span {
+  color: orange;
+  transform: translateX(10px) translateY(-10px);
+  padding: 0 10px;
+  background: var(--color);
+  font-size: 0.8em;
+}
+
+.input-box span {
+  transition: all 0.3s;
+  position: absolute;
+  font-size: 20px;
+  left: 0;
+  top: 0;
+  font-size: 1em;
+  pointer-events: none;
+  padding: 10px;
+  color: #ccc;
+}

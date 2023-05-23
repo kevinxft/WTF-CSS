@@ -1,0 +1,49 @@
+body {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  position: relative;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 30px 90px;
+  font-size: 3vmin;
+  color: #fff;
+  border-radius: 5px;
+  background: linear-gradient(to left, #48c6ef 0%, #6f86d6 100%);
+  box-shadow: 2px 2px 2px rgba(167, 167, 167, 0.4);
+  overflow: hidden;
+}
+
+span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  opacity: 0.5;
+  background: #fff;
+  pointer-events: none;
+  animation: animate 1s linear 1;
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    opacity: 0.5;
+  }
+  100% {
+    width: 1500px;
+    height: 1500px;
+    opacity: 0;
+  }
+}

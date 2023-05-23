@@ -1,0 +1,22 @@
+body {
+  background-color: bisque;
+}
+
+.main {
+  max-width: 800px;
+  margin: 10vmin auto;
+  font-size: 3vmin;
+}
+
+.main span {
+  background: linear-gradient(to right,#ff3e18 16.66%,#fc9a00 16.66%, #fc9a00 33.32%, #ffd800 33.32%, #ffd800 49.98%, #39ea7c 49.98%, #39ea7c 66.64%, #0bb2ff 66.64%, #0bb2ff 80.3%, #985aff 80.3% ) no-repeat right bottom;
+  background-size: 0 4px;
+  transition: background-size 1300ms;
+  line-height: 2;
+  cursor: pointer;
+}
+
+.main span:hover {
+  background-position: left bottom;
+  background-size: 100% 4px ;
+}

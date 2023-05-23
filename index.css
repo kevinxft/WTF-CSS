@@ -1,0 +1,51 @@
+body {
+  background-image: linear-gradient(to right, #27374d 0%, #526d82 100%);
+  min-height: 100vh;
+  display: flex;
+}
+
+.main {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  counter-reset: num; /** 重置计数器为0 **/
+}
+
+.link::before {
+  counter-increment: num;
+  content: counter(num) ". ";
+}
+
+.link {
+  --linear: linear-gradient(to right, #ee6983 0%, #fff5e4 100%);
+  text-align: center;
+  text-decoration: none;
+  position: relative;
+  font-size: 50px;
+  margin-bottom: 20px;
+  background: var(--linear);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  transition: background-size 1000ms;
+}
+
+.link::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: var(--linear) no-repeat right bottom;
+  background-size: 0 4px;
+  transition: background-size 1000ms;
+}
+
+.link:hover::after {
+  background-position: left bottom;
+  background-size: 100% 4px;
+}

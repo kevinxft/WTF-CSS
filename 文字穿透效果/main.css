@@ -1,0 +1,34 @@
+body {
+  --bg: url(./bg.jpg) no-repeat center/cover;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+.banner{
+  background: var(--bg);
+  height: 600px ;
+  width: 100%;
+}
+
+.modal {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.modal h1 {
+  width: 100%;
+  height: 100%;
+  font-size: 9vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-stroke: 1px #fff;
+  -webkit-text-stroke: 1px #fff;
+  background: var(--bg);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
