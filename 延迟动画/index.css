@@ -1,0 +1,90 @@
+.main {
+  min-height: 100vh;
+  width: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  background: inherit;
+  inset: 0;
+  border-radius: inherit;
+  z-index: -1;
+  filter: blur(100px);
+}
+
+.card {
+  --delay: 0;
+  --direc: 0deg;
+  --color: #fff;
+  --color-next: #fff;
+  height: 600px;
+  width: 600px;
+  position: relative;
+  background: linear-gradient(var(--direc), var(--color), var(--color-next));
+  border-radius: 50%;
+  position: relative;
+  z-index: 0;
+  animation-name: spin, rainbow;
+  animation-delay: var(--delay), var(--delay);
+  animation-duration: 14s, 14s;
+  animation-timing-function: linear, linear;
+  animation-iteration-count: 1, 1;
+  /* animation-iteration-count: infinite, infinite; */
+  animation-play-state: paused, paused;
+  /* animation-play-state: running, running; */
+  animation-fill-mode: forwards, forwards;
+}
+
+input {
+  margin-top: 100px;
+}
+
+/* 自定义属性,这样就能参与到动画中，运用到Houdini */
+@property --direc {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes spin {
+  to {
+    --direc: 360deg;
+  }
+}
+
+@keyframes rainbow {
+  0% {
+    --color: red;
+    --color-next: orange;
+  }
+  15% {
+    --color: orange;
+    --color-next: yellow;
+  }
+  30% {
+    --color: yellow;
+    --color-next: green;
+  }
+  45% {
+    --color: green;
+    --color-next: blue;
+  }
+  60% {
+    --color: blue;
+    --color-next: indigo;
+  }
+  75% {
+    --color: indigo;
+    --color-next: violet;
+  }
+  100% {
+    --color: violet;
+    --color-next: red;
+  }
+}
