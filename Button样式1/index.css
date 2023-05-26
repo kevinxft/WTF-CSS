@@ -1,0 +1,43 @@
+body {
+  background: radial-gradient(ellipse at bottom, #dde6ed, #27374d) no-repeat;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  color: white;
+  border: none;
+  background: none;
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn::before,
+.btn::after {
+  content: "";
+  display: block;
+  width: 0%;
+  height: 4px;
+  background: #ffb84c;
+  transition: all 0.5s;
+}
+
+.btn:hover::before {
+  margin-left: auto;
+}
+
+.btn::after {
+  margin-left: auto;
+}
+
+.btn:hover::after {
+  margin-left: 0;
+}
+
+.btn:hover::before,
+.btn:hover::after {
+  width: 100%;
+}
