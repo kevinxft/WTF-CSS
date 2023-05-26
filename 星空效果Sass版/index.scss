@@ -1,0 +1,61 @@
+html {
+  height: 100vh;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+}
+
+@function getShadows($n) {
+  $shadows: '#{random(100)}vw #{random(100)}vh #fff';
+  @for $i from 2 through $n {
+    $shadows: '#{$shadows}, #{random(100)}vw #{random(100)}vh #fff';
+  }
+  @return unquote($shadows);
+}
+$duration: 100s;
+$count: 1000;
+@for $i from 1 through 3 {
+
+  .layer#{$i} {
+    $duration: floor($duration / $i);
+    $count: floor($count / $i);
+    $size: #{$i}px;
+    position: fixed;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    left: 0;
+    top: 0;
+    box-shadow: getShadows($count);
+    animation: move $duration linear infinite;
+    &::after {
+      content: "";
+      position: fixed;
+      left: 0;
+      top: 100vh;
+      width: $size;
+      height: $size;
+      box-shadow: inherit;
+      border-radius: 50%;
+    }
+  }
+}
+
+
+@keyframes move {
+  100% {
+      transform: translateY(-100vh);
+  }
+}
+
+.title {
+  position: fixed;
+  z-index: 999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 12vmin;
+  background: linear-gradient(to bottom, rgba(#fff, 1), rgba(#fff, 0));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
