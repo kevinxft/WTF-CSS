@@ -1,0 +1,159 @@
+body {
+  background: radial-gradient(ellipse at bottom, #EE6983, #FFF5E4);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.h1::after {
+  content: "FUCK OFF";
+  color: #fff;
+  font-size: 10vw;
+  text-shadow: 5px 5px 20px #EE6983;
+}
+@media screen and (max-width: 1900px) {
+  .h1::after {
+    content: "serendipity";
+  }
+}
+@media screen and (max-width: 1870px) {
+  .h1::after {
+    content: "sophisticated";
+  }
+}
+@media screen and (max-width: 1840px) {
+  .h1::after {
+    content: "extraordinary";
+  }
+}
+@media screen and (max-width: 1810px) {
+  .h1::after {
+    content: "magnificent";
+  }
+}
+@media screen and (max-width: 1780px) {
+  .h1::after {
+    content: "accountability";
+  }
+}
+@media screen and (max-width: 1750px) {
+  .h1::after {
+    content: "perseverance";
+  }
+}
+@media screen and (max-width: 1720px) {
+  .h1::after {
+    content: "kaleidoscope";
+  }
+}
+@media screen and (max-width: 1690px) {
+  .h1::after {
+    content: "relationship";
+  }
+}
+@media screen and (max-width: 1660px) {
+  .h1::after {
+    content: "spectacular";
+  }
+}
+@media screen and (max-width: 1630px) {
+  .h1::after {
+    content: "perpetuity";
+  }
+}
+@media screen and (max-width: 1600px) {
+  .h1::after {
+    content: "phenomenal";
+  }
+}
+@media screen and (max-width: 1570px) {
+  .h1::after {
+    content: "perspicacity";
+  }
+}
+@media screen and (max-width: 1540px) {
+  .h1::after {
+    content: "exasperation";
+  }
+}
+@media screen and (max-width: 1510px) {
+  .h1::after {
+    content: "adventure";
+  }
+}
+@media screen and (max-width: 1480px) {
+  .h1::after {
+    content: "butterfly";
+  }
+}
+@media screen and (max-width: 1450px) {
+  .h1::after {
+    content: "sunshine";
+  }
+}
+@media screen and (max-width: 1420px) {
+  .h1::after {
+    content: "rainbow";
+  }
+}
+@media screen and (max-width: 1390px) {
+  .h1::after {
+    content: "coffee";
+  }
+}
+@media screen and (max-width: 1360px) {
+  .h1::after {
+    content: "guitar";
+  }
+}
+@media screen and (max-width: 1330px) {
+  .h1::after {
+    content: "pizza";
+  }
+}
+@media screen and (max-width: 1300px) {
+  .h1::after {
+    content: "apple";
+  }
+}
+@media screen and (max-width: 1270px) {
+  .h1::after {
+    content: "happy";
+  }
+}
+@media screen and (max-width: 1240px) {
+  .h1::after {
+    content: "love";
+  }
+}
+@media screen and (max-width: 1210px) {
+  .h1::after {
+    content: "blue";
+  }
+}
+@media screen and (max-width: 1180px) {
+  .h1::after {
+    content: "car";
+  }
+}
+@media screen and (max-width: 1150px) {
+  .h1::after {
+    content: "dog";
+  }
+}
+@media screen and (max-width: 1120px) {
+  .h1::after {
+    content: "on";
+  }
+}
+@media screen and (max-width: 1090px) {
+  .h1::after {
+    content: "hi";
+  }
+}
+@media screen and (max-width: 1060px) {
+  .h1::after {
+    content: "a";
+  }
+}/*# sourceMappingURL=index.css.map */

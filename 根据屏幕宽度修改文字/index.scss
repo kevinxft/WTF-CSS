@@ -1,0 +1,22 @@
+body {
+  background: radial-gradient(ellipse at bottom, #EE6983 ,#FFF5E4);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+$list: ("serendipity", "sophisticated", "extraordinary", "magnificent", "accountability", "perseverance", "kaleidoscope", "relationship", "spectacular", "perpetuity", "phenomenal", "perspicacity", "exasperation", "adventure", "butterfly", "sunshine", "rainbow", "coffee", "guitar", "pizza", "apple", "happy", "love", "blue", "car", "dog", "on", "hi", "a");
+$max: 1900px;
+.h1::after {
+  content: "FUCK OFF";
+  color: #fff;
+  font-size: 10vw;
+  text-shadow: 5px 5px 20px #EE6983;
+  @each $item in $list {
+    @media screen and (max-width: $max) {
+      content: "#{$item}";
+    }
+    $max: $max - 30px;
+  }
+}
