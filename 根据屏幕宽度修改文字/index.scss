@@ -6,8 +6,8 @@ body {
   justify-content: center;
 }
 
-$list: ("serendipity", "sophisticated", "extraordinary", "magnificent", "accountability", "perseverance", "kaleidoscope", "relationship", "spectacular", "perpetuity", "phenomenal", "perspicacity", "exasperation", "adventure", "butterfly", "sunshine", "rainbow", "coffee", "guitar", "pizza", "apple", "happy", "love", "blue", "car", "dog", "on", "hi", "a");
-$max: 1900px;
+$list: ("sapphire", "emerald", "topaz", "ruby", "diamond", "crystal", "opal", "jade", "garnet", "amethyst", "turquoise", "pearl", "citrine", "peridot", "aquamarine", "moonstone", "onyx", "agate", "amber", "carnelian", "quartz", "zircon", "beryl", "coral", "spinel", "malachite", "lapis", "zirconia", "tanzanite", "hematite", "iolite", "morganite", "rhodolite", "sapphire blue", "emerald green", "champagne", "platinum", "gold", "silver", "bronze", "rose gold", "white gold", "yellow gold", "sterling silver", "pewter", "nickel", "black pearl", "pink diamond", "champagne diamond", "blue diamond", "black diamond", "cluster", "halo", "solitaire", "infinity", "eternity", "promise", "engagement", "wedding", "anniversary", "graduation", "mother's day", "father's day", "valentine's day", "christmas", "new year", "easter", "halloween", "thanksgiving", "independence day", "national day", "memorial day", "labor day", "veterans day", "army", "navy", "air force", "marines", "coast guard", "admiral", "captain", "lieutenant", "sergeant", "private", "bombshell", "dazzle", "flame", "glitter", "stardust", "sunburst", "thunderbolt", "radiance", "sparkle", "twinkle");
+$max: 3000px;
 .h1::after {
   content: "FUCK OFF";
   color: #fff;
