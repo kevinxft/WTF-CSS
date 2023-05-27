@@ -12,148 +12,473 @@ body {
   font-size: 10vw;
   text-shadow: 5px 5px 20px #EE6983;
 }
-@media screen and (max-width: 1900px) {
+@media screen and (max-width: 3000px) {
   .h1::after {
-    content: "serendipity";
+    content: "sapphire";
   }
 }
-@media screen and (max-width: 1870px) {
+@media screen and (max-width: 2970px) {
   .h1::after {
-    content: "sophisticated";
+    content: "emerald";
   }
 }
-@media screen and (max-width: 1840px) {
+@media screen and (max-width: 2940px) {
   .h1::after {
-    content: "extraordinary";
+    content: "topaz";
   }
 }
-@media screen and (max-width: 1810px) {
+@media screen and (max-width: 2910px) {
   .h1::after {
-    content: "magnificent";
+    content: "ruby";
   }
 }
-@media screen and (max-width: 1780px) {
+@media screen and (max-width: 2880px) {
   .h1::after {
-    content: "accountability";
+    content: "diamond";
   }
 }
-@media screen and (max-width: 1750px) {
+@media screen and (max-width: 2850px) {
   .h1::after {
-    content: "perseverance";
+    content: "crystal";
   }
 }
-@media screen and (max-width: 1720px) {
+@media screen and (max-width: 2820px) {
   .h1::after {
-    content: "kaleidoscope";
+    content: "opal";
   }
 }
-@media screen and (max-width: 1690px) {
+@media screen and (max-width: 2790px) {
   .h1::after {
-    content: "relationship";
+    content: "jade";
   }
 }
-@media screen and (max-width: 1660px) {
+@media screen and (max-width: 2760px) {
   .h1::after {
-    content: "spectacular";
+    content: "garnet";
   }
 }
-@media screen and (max-width: 1630px) {
+@media screen and (max-width: 2730px) {
   .h1::after {
-    content: "perpetuity";
+    content: "amethyst";
   }
 }
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 2700px) {
   .h1::after {
-    content: "phenomenal";
+    content: "turquoise";
   }
 }
-@media screen and (max-width: 1570px) {
+@media screen and (max-width: 2670px) {
   .h1::after {
-    content: "perspicacity";
+    content: "pearl";
   }
 }
-@media screen and (max-width: 1540px) {
+@media screen and (max-width: 2640px) {
   .h1::after {
-    content: "exasperation";
+    content: "citrine";
   }
 }
-@media screen and (max-width: 1510px) {
+@media screen and (max-width: 2610px) {
   .h1::after {
-    content: "adventure";
+    content: "peridot";
   }
 }
-@media screen and (max-width: 1480px) {
+@media screen and (max-width: 2580px) {
   .h1::after {
-    content: "butterfly";
+    content: "aquamarine";
   }
 }
-@media screen and (max-width: 1450px) {
+@media screen and (max-width: 2550px) {
   .h1::after {
-    content: "sunshine";
+    content: "moonstone";
   }
 }
-@media screen and (max-width: 1420px) {
+@media screen and (max-width: 2520px) {
   .h1::after {
-    content: "rainbow";
+    content: "onyx";
   }
 }
-@media screen and (max-width: 1390px) {
+@media screen and (max-width: 2490px) {
   .h1::after {
-    content: "coffee";
+    content: "agate";
   }
 }
-@media screen and (max-width: 1360px) {
+@media screen and (max-width: 2460px) {
   .h1::after {
-    content: "guitar";
+    content: "amber";
   }
 }
-@media screen and (max-width: 1330px) {
+@media screen and (max-width: 2430px) {
   .h1::after {
-    content: "pizza";
+    content: "carnelian";
   }
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 2400px) {
   .h1::after {
-    content: "apple";
+    content: "quartz";
   }
 }
-@media screen and (max-width: 1270px) {
+@media screen and (max-width: 2370px) {
   .h1::after {
-    content: "happy";
+    content: "zircon";
   }
 }
-@media screen and (max-width: 1240px) {
+@media screen and (max-width: 2340px) {
   .h1::after {
-    content: "love";
+    content: "beryl";
   }
 }
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 2310px) {
   .h1::after {
-    content: "blue";
+    content: "coral";
   }
 }
-@media screen and (max-width: 1180px) {
+@media screen and (max-width: 2280px) {
   .h1::after {
-    content: "car";
+    content: "spinel";
   }
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 2250px) {
   .h1::after {
-    content: "dog";
+    content: "malachite";
   }
 }
-@media screen and (max-width: 1120px) {
+@media screen and (max-width: 2220px) {
   .h1::after {
-    content: "on";
+    content: "lapis";
   }
 }
-@media screen and (max-width: 1090px) {
+@media screen and (max-width: 2190px) {
   .h1::after {
-    content: "hi";
+    content: "zirconia";
   }
 }
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 2160px) {
   .h1::after {
-    content: "a";
+    content: "tanzanite";
+  }
+}
+@media screen and (max-width: 2130px) {
+  .h1::after {
+    content: "hematite";
+  }
+}
+@media screen and (max-width: 2100px) {
+  .h1::after {
+    content: "iolite";
+  }
+}
+@media screen and (max-width: 2070px) {
+  .h1::after {
+    content: "morganite";
+  }
+}
+@media screen and (max-width: 2040px) {
+  .h1::after {
+    content: "rhodolite";
+  }
+}
+@media screen and (max-width: 2010px) {
+  .h1::after {
+    content: "sapphire blue";
+  }
+}
+@media screen and (max-width: 1980px) {
+  .h1::after {
+    content: "emerald green";
+  }
+}
+@media screen and (max-width: 1950px) {
+  .h1::after {
+    content: "champagne";
+  }
+}
+@media screen and (max-width: 1920px) {
+  .h1::after {
+    content: "platinum";
+  }
+}
+@media screen and (max-width: 1890px) {
+  .h1::after {
+    content: "gold";
+  }
+}
+@media screen and (max-width: 1860px) {
+  .h1::after {
+    content: "silver";
+  }
+}
+@media screen and (max-width: 1830px) {
+  .h1::after {
+    content: "bronze";
+  }
+}
+@media screen and (max-width: 1800px) {
+  .h1::after {
+    content: "rose gold";
+  }
+}
+@media screen and (max-width: 1770px) {
+  .h1::after {
+    content: "white gold";
+  }
+}
+@media screen and (max-width: 1740px) {
+  .h1::after {
+    content: "yellow gold";
+  }
+}
+@media screen and (max-width: 1710px) {
+  .h1::after {
+    content: "sterling silver";
+  }
+}
+@media screen and (max-width: 1680px) {
+  .h1::after {
+    content: "pewter";
+  }
+}
+@media screen and (max-width: 1650px) {
+  .h1::after {
+    content: "nickel";
+  }
+}
+@media screen and (max-width: 1620px) {
+  .h1::after {
+    content: "black pearl";
+  }
+}
+@media screen and (max-width: 1590px) {
+  .h1::after {
+    content: "pink diamond";
+  }
+}
+@media screen and (max-width: 1560px) {
+  .h1::after {
+    content: "champagne diamond";
+  }
+}
+@media screen and (max-width: 1530px) {
+  .h1::after {
+    content: "blue diamond";
+  }
+}
+@media screen and (max-width: 1500px) {
+  .h1::after {
+    content: "black diamond";
+  }
+}
+@media screen and (max-width: 1470px) {
+  .h1::after {
+    content: "cluster";
+  }
+}
+@media screen and (max-width: 1440px) {
+  .h1::after {
+    content: "halo";
+  }
+}
+@media screen and (max-width: 1410px) {
+  .h1::after {
+    content: "solitaire";
+  }
+}
+@media screen and (max-width: 1380px) {
+  .h1::after {
+    content: "infinity";
+  }
+}
+@media screen and (max-width: 1350px) {
+  .h1::after {
+    content: "eternity";
+  }
+}
+@media screen and (max-width: 1320px) {
+  .h1::after {
+    content: "promise";
+  }
+}
+@media screen and (max-width: 1290px) {
+  .h1::after {
+    content: "engagement";
+  }
+}
+@media screen and (max-width: 1260px) {
+  .h1::after {
+    content: "wedding";
+  }
+}
+@media screen and (max-width: 1230px) {
+  .h1::after {
+    content: "anniversary";
+  }
+}
+@media screen and (max-width: 1200px) {
+  .h1::after {
+    content: "graduation";
+  }
+}
+@media screen and (max-width: 1170px) {
+  .h1::after {
+    content: "mother's day";
+  }
+}
+@media screen and (max-width: 1140px) {
+  .h1::after {
+    content: "father's day";
+  }
+}
+@media screen and (max-width: 1110px) {
+  .h1::after {
+    content: "valentine's day";
+  }
+}
+@media screen and (max-width: 1080px) {
+  .h1::after {
+    content: "christmas";
+  }
+}
+@media screen and (max-width: 1050px) {
+  .h1::after {
+    content: "new year";
+  }
+}
+@media screen and (max-width: 1020px) {
+  .h1::after {
+    content: "easter";
+  }
+}
+@media screen and (max-width: 990px) {
+  .h1::after {
+    content: "halloween";
+  }
+}
+@media screen and (max-width: 960px) {
+  .h1::after {
+    content: "thanksgiving";
+  }
+}
+@media screen and (max-width: 930px) {
+  .h1::after {
+    content: "independence day";
+  }
+}
+@media screen and (max-width: 900px) {
+  .h1::after {
+    content: "national day";
+  }
+}
+@media screen and (max-width: 870px) {
+  .h1::after {
+    content: "memorial day";
+  }
+}
+@media screen and (max-width: 840px) {
+  .h1::after {
+    content: "labor day";
+  }
+}
+@media screen and (max-width: 810px) {
+  .h1::after {
+    content: "veterans day";
+  }
+}
+@media screen and (max-width: 780px) {
+  .h1::after {
+    content: "army";
+  }
+}
+@media screen and (max-width: 750px) {
+  .h1::after {
+    content: "navy";
+  }
+}
+@media screen and (max-width: 720px) {
+  .h1::after {
+    content: "air force";
+  }
+}
+@media screen and (max-width: 690px) {
+  .h1::after {
+    content: "marines";
+  }
+}
+@media screen and (max-width: 660px) {
+  .h1::after {
+    content: "coast guard";
+  }
+}
+@media screen and (max-width: 630px) {
+  .h1::after {
+    content: "admiral";
+  }
+}
+@media screen and (max-width: 600px) {
+  .h1::after {
+    content: "captain";
+  }
+}
+@media screen and (max-width: 570px) {
+  .h1::after {
+    content: "lieutenant";
+  }
+}
+@media screen and (max-width: 540px) {
+  .h1::after {
+    content: "sergeant";
+  }
+}
+@media screen and (max-width: 510px) {
+  .h1::after {
+    content: "private";
+  }
+}
+@media screen and (max-width: 480px) {
+  .h1::after {
+    content: "bombshell";
+  }
+}
+@media screen and (max-width: 450px) {
+  .h1::after {
+    content: "dazzle";
+  }
+}
+@media screen and (max-width: 420px) {
+  .h1::after {
+    content: "flame";
+  }
+}
+@media screen and (max-width: 390px) {
+  .h1::after {
+    content: "glitter";
+  }
+}
+@media screen and (max-width: 360px) {
+  .h1::after {
+    content: "stardust";
+  }
+}
+@media screen and (max-width: 330px) {
+  .h1::after {
+    content: "sunburst";
+  }
+}
+@media screen and (max-width: 300px) {
+  .h1::after {
+    content: "thunderbolt";
+  }
+}
+@media screen and (max-width: 270px) {
+  .h1::after {
+    content: "radiance";
+  }
+}
+@media screen and (max-width: 240px) {
+  .h1::after {
+    content: "sparkle";
+  }
+}
+@media screen and (max-width: 210px) {
+  .h1::after {
+    content: "twinkle";
   }
 }/*# sourceMappingURL=index.css.map */
