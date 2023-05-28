@@ -1,0 +1,26 @@
+body {
+  background: radial-gradient(ellipse at bottom, #4c4c6d 0%, #000 100%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sun {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+  border-radius: 50%;
+  box-shadow: 0 0 20px #fff, -10px 0 80px #ff0, -10px 0 40px #ff2039,
+    inset 0 0 50px #fff, inset -50px 0 80px #ff0, inset 20px 0 50px #ff2039,
+    inset -50px 0 200px #ff0, inset 20px 0 50px #ff2039;
+  animation: sun 5s ease-in-out infinite;
+}
+
+@keyframes sun {
+  50% {
+    box-shadow: 0 0 50px #fff, -10px 0 80px #ff2039, -10px 0 40px #ff0,
+      inset 0 0 50px #fff, inset -50px 0 80px #ff0, inset 50px 0 80px #ff2039,
+      inset -50px 0 200px #ff2039, inset 50px 0 200px #ff0;
+  }
+}
