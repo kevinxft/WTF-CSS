@@ -1,5 +1,5 @@
 body {
-  background: radial-gradient(ellipse at bottom, #4c4c6d 0%, #000 100%);
+  background: radial-gradient(ellipse at center, #3c3c3c 0%, #000 100%);
   min-height: 100vh;
   display: flex;
   justify-content: center;
