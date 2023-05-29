@@ -1,0 +1,32 @@
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(ellipse at center, #526d82, #27374d);
+}
+
+.item {
+  position: absolute;
+  background-color: transparent;
+  width: calc(var(--i) * 25px);
+  aspect-ratio: 1;
+  border: 10px solid rgb(0, 200, 255);
+  border-radius: 50%;
+  transform: rotateX(70deg);
+  animation: move 3s ease-in-out calc(var(--i) * 0.08s) infinite;
+}
+
+@keyframes move {
+  0%,
+  100% {
+    transform: rotateX(70deg) translateY(0px);
+    filter: hue-rotate(0deg);
+  }
+
+  50% {
+    transform: rotateX(70deg) translateY(-35vw);
+    filter: hue-rotate(180deg);
+  }
+}
