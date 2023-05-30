@@ -4,7 +4,9 @@
   const iframe = document.getElementById("iframe");
 
   function openInIframe(url) {
-    iframe.src = url;
+    if (iframe.src !== url) {
+      iframe.src = url;
+    }
   }
 
   allLinks.forEach((link) => {
