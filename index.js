@@ -4,18 +4,16 @@
   const iframe = document.getElementById("iframe");
 
   function openInIframe(url) {
-    console.log(iframe);
     iframe.src = url;
-    console.log(url);
   }
 
   allLinks.forEach((link) => {
-    if (isGithubEnv) {
-      const href = link.href.replace(`${window.origin}/`, window.location.href);
-    }
     link.addEventListener("click", (e) => {
       e.preventDefault();
-      openInIframe(link.href);
+      const url = isGithubEnv
+        ? link.href.replace(`${window.origin}/`, window.location.href)
+        : link.href;
+      openInIframe(url);
     });
   });
 })(window);
