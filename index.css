@@ -1,16 +1,28 @@
 body {
   background-image: linear-gradient(to right, #27374d 0%, #526d82 100%);
-  min-height: 100vh;
-  display: flex;
 }
 
 .main {
   margin: auto;
   display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main .siderbar {
+  --font-size: 20px;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   counter-reset: num; /** 重置计数器为0 **/
+  width: 300px;
+  padding: 10px;
+  gap: 10px;
+  box-shadow: inset -5px -5px 10px rgba(red, green, blue, 0.3);
+}
+.main .content {
+  flex: 1;
 }
 
 .link::before {
@@ -23,8 +35,7 @@ body {
   text-align: center;
   text-decoration: none;
   position: relative;
-  font-size: 50px;
-  margin-bottom: 20px;
+  font-size: var(--font-size);
   background: var(--linear);
   background-clip: text;
   color: transparent;
