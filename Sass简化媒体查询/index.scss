@@ -1,0 +1,57 @@
+$breakpoints: (
+  "phone": [320px,
+  480px],
+  "pad": [481px,
+  768px],
+  "notebook": [769px,
+  1024px],
+  "desktop": [1025px,
+  1200px],
+  "tv": 1201px,
+);
+
+@mixin respond-to($breakname) {
+  $bp: map-get($breakpoints, $breakname);
+  @if type-of($bp) == "list" {
+    $min: nth($bp, 1);
+    $max: nth($bp, 2);
+    @media (min-width: $min) and (max-width: $max) {
+      @content;
+    }
+  } @else {
+    @media (min-width: $bp) {
+      @content;
+    }
+  }
+}
+
+.main {
+  display: flex;
+  min-height: 100vh;
+  place-content: center;
+  flex-wrap: wrap;
+  font-size: 10vmin;
+  &::before {
+    content: "phone";
+    @include respond-to(phone) {
+      font-size: 10vmin;
+      content: "phone";
+    }
+    @include respond-to(pad) {
+      font-size: 12vmin;
+      content: "pad";
+    }
+    @include respond-to(notebook) {
+      font-size: 15vmin;
+      content: "notebook";
+    }
+    @include respond-to(desktop) {
+      font-size: 20vmin;
+      content: "desktop";
+    }
+    @include respond-to(tv) {
+      font-size: 50vmin;
+      content: "tv";
+    }
+  }
+}

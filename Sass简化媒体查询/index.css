@@ -1,0 +1,40 @@
+.main {
+  display: flex;
+  min-height: 100vh;
+  place-content: center;
+  flex-wrap: wrap;
+  font-size: 10vmin;
+}
+.main::before {
+  content: "phone";
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .main::before {
+    font-size: 10vmin;
+    content: "phone";
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .main::before {
+    font-size: 12vmin;
+    content: "pad";
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main::before {
+    font-size: 15vmin;
+    content: "notebook";
+  }
+}
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .main::before {
+    font-size: 20vmin;
+    content: "desktop";
+  }
+}
+@media (min-width: 1201px) {
+  .main::before {
+    font-size: 50vmin;
+    content: "tv";
+  }
+}/*# sourceMappingURL=index.css.map */
