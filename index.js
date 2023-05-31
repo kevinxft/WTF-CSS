@@ -12,10 +12,7 @@
   allLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
       e.preventDefault();
-      const url = isGithubEnv
-        ? link.href.replace(`${window.origin}/`, window.location.href)
-        : link.href;
-      openInIframe(url);
+      openInIframe(link.href);
     });
   });
 })(window);
