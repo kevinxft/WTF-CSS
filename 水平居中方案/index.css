@@ -1,0 +1,80 @@
+.plan {
+  height: 100vh;
+  background: radial-gradient(ellipse at center, #f8f6f4, #c4dfdf);
+}
+
+.grid {
+  display: grid;
+  place-items: center;
+}
+
+.grid .item {
+  grid-area: 1 / 1 / -1 / -1;
+  background-color: #d4adfc;
+  /** 或者 place-self: center **/
+}
+.grid .item::after {
+  content: "Grid方案";
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  line-height: 200px;
+  border-radius: 20px;
+  color: #fff;
+  transition: background-color 0.5s linear;
+}
+
+.flex {
+  display: flex;
+  place-content: center;
+  flex-wrap: wrap;
+}
+
+.flex .item {
+  background: #aee2ff;
+}
+.flex .item::after {
+  content: "Flex方案（推荐）";
+}
+
+.absolute {
+  position: relative;
+  z-index: -1;
+}
+
+.absolute .item {
+  background: #f79327;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.absolute .item::after {
+  content: "Absolute方案";
+}
+
+.panne {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background: #9babb8;
+  padding: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.panne li {
+  cursor: pointer;
+}
+
+.panne li.active {
+  color: #fff;
+  border-bottom: 2px solid #fff;
+}
