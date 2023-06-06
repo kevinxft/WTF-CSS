@@ -1,0 +1,61 @@
+@use "sass:math";
+
+$fontSize: 28px;
+$diameter: 220px;
+$innerDiameter: 60%;
+
+@debug $diameter * math.sin(225deg);
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(ellipse at center, #f8f6f4, #c4dfdf);
+  .circle {
+    color: #27374d;
+    font-size: 40px;
+    width: $diameter;
+    height: $diameter;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c4dfdf;
+    border: 1px solid #9db2bf;
+    box-shadow: inset 0 0 10px rgba($color: #000000, $alpha: 0.2);
+    &::after {
+      content: "";
+      display: block;
+      width: $innerDiameter;
+      height: $innerDiameter;
+      border-radius: 50%;
+      border: 1px solid #9db2bf;
+      background: #f9f5f6;
+      box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.2);
+    }
+  }
+
+  .iconfont {
+    font-size: $fontSize;
+    position: absolute;
+  }
+  .button {
+    cursor: pointer;
+    &:hover {
+      color: #f9f5f6;
+    }
+  }
+  $r: 87px;
+  $n: 6;
+  $step: 360deg / $n;
+  @for $i from 1 through $n {
+    .button:nth-of-type(#{$i}) {
+      $deg: $i * $step;
+      $x: $r * math.sin($deg);
+      $y: $r * math.cos($deg) * -1;
+      transform: translate($x, $y);
+    }
+  }
+}
