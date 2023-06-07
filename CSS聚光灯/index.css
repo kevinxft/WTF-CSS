@@ -1,0 +1,47 @@
+.text {
+  height: 100vh;
+  width: 100vw;
+  background: radial-gradient(ellipse at center, #2c3333, #080202);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text h2 {
+  font-size: 10em;
+  color: #666;
+  position: relative;
+}
+
+.text h2::after {
+  --size: 160px;
+  content: "SpotLight";
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: animate 7s infinite;
+  background-image: linear-gradient(
+    90deg,
+    #f79533,
+    #f37055,
+    #ef4e7b,
+    #a166ab,
+    #5073b8,
+    #1098ad,
+    #07b39b,
+    #6fba82
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    /** 伪元素裁切成圆形 **/
+    clip-path: ellipse(var(--size) var(--size) at 0% center);
+  }
+  50% {
+    clip-path: ellipse(var(--size) var(--size) at 100% center);
+  }
+}
