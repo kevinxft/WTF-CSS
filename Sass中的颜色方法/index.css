@@ -1,0 +1,91 @@
+body {
+  background: radial-gradient(ellipse at center, #e3f4f4 0%, #c4dfdf 100%) no-repeat center center fixed;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.btn:nth-child(1) {
+  background: #00dfa2;
+}
+.btn:nth-child(1):hover {
+  background: #13ffbe;
+}
+.btn:nth-child(1):active {
+  background: #00ac7d;
+}
+.btn:nth-child(1):disabled {
+  background: #46ffcc;
+  color: #acffe8;
+}
+
+.btn:nth-child(2) {
+  background: #dd58d6;
+}
+.btn:nth-child(2):hover {
+  background: #e682e0;
+}
+.btn:nth-child(2):active {
+  background: #d42ecc;
+}
+.btn:nth-child(2):disabled {
+  background: #eeadeb;
+  color: white;
+}
+
+.btn:nth-child(3) {
+  background: #ffb84c;
+}
+.btn:nth-child(3):hover {
+  background: #ffcc7f;
+}
+.btn:nth-child(3):active {
+  background: #ffa419;
+}
+.btn:nth-child(3):disabled {
+  background: #ffe0b2;
+  color: white;
+}
+
+.btn:nth-child(4) {
+  background: #73bbc9;
+}
+.btn:nth-child(4):hover {
+  background: #98cdd7;
+}
+.btn:nth-child(4):active {
+  background: #4ea9bb;
+}
+.btn:nth-child(4):disabled {
+  background: #bddfe5;
+  color: white;
+}
+
+.btn:nth-child(5) {
+  background: #ff0060;
+}
+.btn:nth-child(5):hover {
+  background: #ff3380;
+}
+.btn:nth-child(5):active {
+  background: #cc004d;
+}
+.btn:nth-child(5):disabled {
+  background: #ff66a0;
+  color: #ffccdf;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  background: none;
+  color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=index.css.map */
