@@ -8,7 +8,7 @@ body {
   gap: 40px;
 }
 
-$btnColors: #00dfa2, #dd58d6, #ffb84c, #73bbc9, #ff0060;
+$btnColors: #b799ff, #dd58d6, #ffb84c, #8696fe, #ff0060;
 
 @for $i from 1 through length($btnColors) {
   .btn:nth-child(#{$i}) {
@@ -20,9 +20,9 @@ $btnColors: #00dfa2, #dd58d6, #ffb84c, #73bbc9, #ff0060;
     &:active {
       background: darken($bg, 10%);
     }
+
     &:disabled {
       background: lighten($bg, 20%);
-      color: lighten($bg, 40%);
     }
   }
 }
@@ -35,5 +35,4 @@ $btnColors: #00dfa2, #dd58d6, #ffb84c, #73bbc9, #ff0060;
   padding: 30px;
   border-radius: 20px;
   font-size: 20px;
-  cursor: pointer;
 }
