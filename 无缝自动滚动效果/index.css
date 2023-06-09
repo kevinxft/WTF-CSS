@@ -1,0 +1,94 @@
+#app {
+  min-height: 100vh;
+  background: radial-gradient(ellipse at bottom, #f4eeff 0%, #424874 100%);
+  display: flex;
+  align-items: center;
+}
+#app .view {
+  display: flex;
+  will-change: transform;
+}
+#app .view .list {
+  display: flex;
+  gap: 30px;
+  list-style-type: none;
+  margin-left: 30px;
+}
+#app .view .list .item {
+  position: relative;
+}
+#app .view .list .item:hover .mask {
+  opacity: 1;
+}
+#app .view .list .item:hover .mask button {
+  transform: translateY(0);
+}
+#app .view .list img {
+  display: block;
+  height: 300px;
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+}
+#app .view .list .mask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  transition: opacity 0.3;
+}
+#app .view .list .mask button {
+  outline: none;
+  border: none;
+  background-color: #fff;
+  padding: 12px 22px;
+  border-radius: 1000px;
+  display: inline-block;
+  cursor: pointer;
+  transform: translateY(30px);
+  transition: transform 0.3s;
+}
+#app .view .list .mask button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+#app .view .list .mask button .icon {
+  vertical-align: text-top;
+  margin-left: 5px;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #1d1d1f;
+  position: relative;
+}
+#app .view .list .mask button .icon::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 3px;
+  left: 6px;
+  border: 4px solid #fff;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-20000px);
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
