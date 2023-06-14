@@ -1,0 +1,83 @@
+body {
+  height: 100vh;
+  display: flex;
+  place-content: center;
+  flex-wrap: wrap;
+  background: radial-gradient(ellipse at center, #395b64, #2c3333);
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.5);
+}
+.list .item {
+  position: relative;
+  color: #fff;
+  cursor: pointer;
+}
+.list .item .iconfont {
+  display: block;
+  position: relative;
+  z-index: 2;
+  padding: 20px 40px;
+  opacity: 0.5;
+  font-size: 20px;
+  transition: all 0.2s;
+  backdrop-filter: blur(18px);
+}
+.list .item .bg {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  opacity: 0;
+  z-index: 1;
+}
+.list .item:hover .iconfont {
+  opacity: 1;
+}
+.list .item:hover .bg {
+  opacity: 1;
+}
+.list .item:first-child .iconfont {
+  border-radius: 10px 0 0 10px;
+}
+.list .item:last-child .iconfont {
+  border-radius: 0 10px 10px 0;
+}
+.list .item:nth-child(1) .bg {
+  background-color: #ff0060;
+  box-shadow: 0 0 20px #ff0060, 0 0 35px #ff0060, 0 0 10px #ff0060, 0 0 45px #ff0060;
+}
+.list .item:nth-child(2) .bg {
+  background-color: #fff5b8;
+  box-shadow: 0 0 20px #fff5b8, 0 0 35px #fff5b8, 0 0 10px #fff5b8, 0 0 45px #fff5b8;
+}
+.list .item:nth-child(3) .bg {
+  background-color: #f9ed69;
+  box-shadow: 0 0 20px #f9ed69, 0 0 35px #f9ed69, 0 0 10px #f9ed69, 0 0 45px #f9ed69;
+}
+.list .item:nth-child(4) .bg {
+  background-color: #00dfa2;
+  box-shadow: 0 0 20px #00dfa2, 0 0 35px #00dfa2, 0 0 10px #00dfa2, 0 0 45px #00dfa2;
+}
+.list .item:nth-child(5) .bg {
+  background-color: #a5dee5;
+  box-shadow: 0 0 20px #a5dee5, 0 0 35px #a5dee5, 0 0 10px #a5dee5, 0 0 45px #a5dee5;
+}
+.list .item:nth-child(6) .bg {
+  background-color: #fdcedf;
+  box-shadow: 0 0 20px #fdcedf, 0 0 35px #fdcedf, 0 0 10px #fdcedf, 0 0 45px #fdcedf;
+}
+.list .item:nth-child(7) .bg {
+  background-color: #e4a5ff;
+  box-shadow: 0 0 20px #e4a5ff, 0 0 35px #e4a5ff, 0 0 10px #e4a5ff, 0 0 45px #e4a5ff;
+}
+
+/*# sourceMappingURL=index.css.map */
