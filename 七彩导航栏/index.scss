@@ -1,0 +1,74 @@
+body {
+  height: 100vh;
+  display: flex;
+  place-content: center;
+  flex-wrap: wrap;
+  background: radial-gradient(ellipse at center, #395b64, #2c3333);
+}
+
+$colors: #ff0060, #fff5b8, #f9ed69, #00dfa2, #a5dee5, #fdcedf, #e4a5ff;
+$radius: 10px;
+
+.list {
+  list-style: none;
+  display: flex;
+  border-radius: $radius;
+  box-shadow: 0 5px 25px rgba($color: #000000, $alpha: 0.5);
+  .item {
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+    .iconfont {
+      display: block;
+      position: relative;
+      z-index: 2;
+      padding: 20px 40px;
+      opacity: 0.5;
+      font-size: 20px;
+      transition: all 0.2s;
+      backdrop-filter: blur(18px);
+    }
+    .bg {
+      position: absolute;
+      top: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 50px;
+      height: 40px;
+      border-radius: $radius;
+      transition: all 0.3s;
+      opacity: 0;
+      z-index: 1;
+    }
+    &:hover {
+      .iconfont {
+        opacity: 1;
+      }
+      .bg {
+        opacity: 1;
+      }
+    }
+    &:first-child {
+      .iconfont {
+        border-radius: $radius 0 0 $radius;
+      }
+    }
+    &:last-child {
+      .iconfont {
+        border-radius: 0 $radius $radius 0;
+      }
+    }
+
+    @for $i from 1 through 7 {
+      &:nth-child(#{$i}) {
+        .bg {
+          background-color: nth($colors, $n: $i);
+          box-shadow: 0 0 20px nth($list: $colors, $n: $i),
+            0 0 35px nth($list: $colors, $n: $i),
+            0 0 10px nth($list: $colors, $n: $i),
+            0 0 45px nth($list: $colors, $n: $i);
+        }
+      }
+    }
+  }
+}
