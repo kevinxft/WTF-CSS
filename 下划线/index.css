@@ -1,0 +1,17 @@
+span {
+  font-size: 40px;
+  background: linear-gradient(
+    to right,
+    black 0%,
+    black 20%,
+    transparent 20%,
+    transparent 40%,
+    black 40%,
+    black 80%,
+    transparent 80%,
+    transparent 100%
+  );
+  background-size: 20px 4px;
+  background-repeat: repeat-x;
+  background-position: left bottom;
+}
