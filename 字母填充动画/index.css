@@ -1,0 +1,36 @@
+body {
+  background: radial-gradient(ellipse at bottom, #2D4356 , #435B66);
+  height: 100vh;
+  display: flex;
+}
+h1 {
+  margin: auto;
+  font-size: 10vmin;
+  color: transparent;
+  position: relative;
+  -webkit-text-stroke: 1px #ECF2FF;
+  -webkit-text-fill-color: transparent;
+}
+
+h1::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  color: #fff;
+  border-right: 2xp solid white;
+  overflow: hidden;
+  animation: show 5s linear infinite;
+  -webkit-text-fill-color: white;
+}
+
+@keyframes show {
+  0%,100% {
+    width: 0;
+  }
+  80%,90% {
+    width: 100%;
+  }
+}
