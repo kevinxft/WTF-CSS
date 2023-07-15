@@ -1,5 +1,4 @@
 (function (window) {
-  const isGithubEnv = window.origin.indexOf("github") > 0;
   const allLinks = document.querySelectorAll(".main .link");
   const iframe = document.getElementById("iframe");
 
@@ -9,7 +8,8 @@
     }
   }
 
-  allLinks.forEach((link) => {
+  allLinks.forEach((link, index) => {
+    link.style.setProperty("--delay", `${index * 0.1}s`);
     link.addEventListener("click", (e) => {
       e.preventDefault();
       openInIframe(link.href);
