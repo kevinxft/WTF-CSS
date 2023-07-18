@@ -1,0 +1,107 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.button {
+  border-radius: 20px;
+  font-size: 80px;
+  padding: 2px 10px;
+  box-sizing: border-box;
+}
+
+.first {
+  position: relative;
+  overflow: hidden;
+  z-index: 3;
+  color: #c5dff8;
+}
+
+.first::before {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: calc(100% - 8px);
+  height: calc(100% - 8px);
+  left: 4px;
+  border-radius: inherit;
+  top: 4px;
+  background: #4a55a2;
+  z-index: -1;
+}
+
+.first::after {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 200%;
+  height: 200px;
+  background: #ff90bb;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 0;
+  animation: rotate 2s linear infinite;
+  z-index: -2;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+.second {
+  color: #c5dff8;
+  position: relative;
+  z-index: 1;
+  border-radius: 4px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.second::before {
+  display: block;
+  position: absolute;
+  content: " ";
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  left: 10px;
+  top: 10px;
+  background: #2b3a55;
+  z-index: -1;
+  border-radius: inherit;
+}
+
+@property --deg {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.second::after {
+  --deg: 0deg;
+  position: absolute;
+  z-index: -2;
+  background: conic-gradient(
+    from var(--deg),
+    #ffe569 30%,
+    transparent 31%,
+    transparent 100%
+  );
+  display: block;
+  content: " ";
+  width: 120%;
+  height: 120%;
+  top: -10%;
+  left: -10%;
+  animation: rotate2 2s linear infinite;
+}
+
+@keyframes rotate2 {
+  to {
+    --deg: 360deg;
+  }
+}
