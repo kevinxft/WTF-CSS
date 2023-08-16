@@ -1,0 +1,27 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+  background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+span {
+  font-size: 10vw;
+  color: #fff;
+  font-weight: bold;
+  animation: spread 1s ease-in-out infinite alternate;
+}
+
+@keyframes spread {
+  to {
+    color: pink;
+    text-shadow: 20px 0 70px pink;
+  }
+}
+
+@for $i from 1 through 8 {
+  span:nth-child(#{$i}) {
+    animation-delay: ($i - 1) * 0.2s;
+  }
+}
