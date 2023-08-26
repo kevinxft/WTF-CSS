@@ -1,0 +1,31 @@
+body {
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background: black;
+  filter: contrast(30);
+  text-align: center;
+}
+
+.letter {
+  color: #fff;
+  font-size: 120px;
+  font-weight: bold;
+  animation: animate 3s infinite alternate;
+}
+
+@keyframes animate {
+  from {
+    letter-spacing: -50px;
+    filter: blur(10px);
+  }
+
+  to {
+    letter-spacing: 10px;
+    filter: blur(1px);
+  }
+}
