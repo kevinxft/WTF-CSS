@@ -1,20 +1,19 @@
-html {
+body {
   height: 100vh;
   background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
   overflow: hidden;
 }
 
 @function getShadows($n) {
-  $shadows: '#{random(100)}vw #{random(100)}vh #fff';
+  $shadows: "#{random(100)}vw #{random(100)}vh #fff";
   @for $i from 2 through $n {
-    $shadows: '#{$shadows}, #{random(100)}vw #{random(100)}vh #fff';
+    $shadows: "#{$shadows}, #{random(100)}vw #{random(100)}vh #fff";
   }
   @return unquote($shadows);
 }
 $duration: 100s;
 $count: 1000;
 @for $i from 1 through 3 {
-
   .layer#{$i} {
     $duration: floor($duration / $i);
     $count: floor($count / $i);
@@ -40,10 +39,9 @@ $count: 1000;
   }
 }
 
-
 @keyframes move {
   100% {
-      transform: translateY(-100vh);
+    transform: translateY(-100vh);
   }
 }
 
