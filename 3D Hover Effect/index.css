@@ -1,0 +1,22 @@
+body {
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.card {
+  width: 287px;
+  border-radius: 10px;
+  transition: 0.3s;
+  transform: perspective(500px) rotateX(var(--rx, 0deg))
+    rotateY(var(--ry, 0deg));
+}
+
+.card img {
+  border-radius: inherit;
+  width: 100%;
+}
+
+.card:hover {
+  box-shadow: -3px -3px 10px #fdca30, 3px 3px 10px #000000;
+}
