@@ -1,0 +1,33 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #144272;
+}
+.box {
+  display: grid;
+  height: 300px;
+  width: 300px;
+  gap: 10px;
+  background: black;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  transition: all 0.3s;
+  box-shadow: 0 0 20px 10px rgba($color: #000000, $alpha: 0.3);
+  @for $i from 0 to 9 {
+    .item:nth-child(#{$i + 1}) {
+      background: hsl($i * 40%, 100%, 70%);
+      cursor: pointer;
+    }
+
+    &:has(.item:nth-child(#{$i + 1}):hover) {
+      $r: floor($i / 3 + 1);
+      $c: $i % 3 + 1;
+      $arr: 1fr 1fr 1fr;
+      $rows: set-nth($arr, $r, 2fr);
+      $cols: set-nth($arr, $c, 2fr);
+      grid-template-rows: $rows;
+      grid-template-columns: $cols;
+    }
+  }
+}
