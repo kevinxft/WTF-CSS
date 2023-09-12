@@ -1,8 +1,15 @@
 body {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: #144272;
+}
+
+.tips {
+  color: white;
+  margin-bottom: 30px;
+  font-size: 30px;
 }
 
 .box {

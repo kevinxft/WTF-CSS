@@ -19,6 +19,7 @@ body {
   width: 300px;
   padding: 10px;
   gap: 5px;
+  overflow-y: auto;
 }
 .main .content {
   flex: 1;
