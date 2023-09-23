@@ -1,0 +1,22 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: grey;
+}
+
+.font {
+  color: white;
+  font-size: 220px;
+  font-family: "Anton", sans-serif;
+  position: relative;
+}
+
+.font::before {
+  content: "DARKNESS";
+  color: #000;
+  position: absolute;
+  transform: translate(-76px, 47px) scaleY(0.5) skew(40deg);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000);
+  z-index: -1;
+}
